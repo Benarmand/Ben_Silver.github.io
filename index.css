@@ -6,7 +6,7 @@
 }
 
 /* Style the navbar */
-.navbar {
+/* .navbar {
   background-color: #393939;
   color: #fff;
   display: flex;
@@ -22,7 +22,7 @@
   justify-content: center;
   align-items: center;
   padding: 5px 0px;
-}
+} */
 
 .Our_Products {
   height: 6rem;
@@ -159,6 +159,7 @@
 .blog-image {
   width: 100%;
   height: 20em;
+  border-radius: 10px;
 }
 
 .blog-text-container {
@@ -195,7 +196,7 @@
 
 .assistance-container {
   overflow: hidden;
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -205,10 +206,6 @@
   margin: 50px 10px;
   padding: 20px;
   transition: width 1s, height 1s;
-}
-
-.assistance-container:hover {
-  width: 100%;
 }
 
 .assistance-title {
@@ -236,10 +233,10 @@
   margin: 20px 0px;
 }
 
-.assistance-text{
+.assistance-text {
   font-size: 20px;
   font-weight: bold;
-  color:#196400
+  color: #196400;
 }
 
 .location-main-container {
@@ -251,7 +248,7 @@
 
 .location-container {
   overflow: hidden;
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -260,11 +257,6 @@
   box-shadow: 2px 2px 5px 1px rgba(97, 97, 97, 0.137);
   margin: 50px 10px;
   padding: 20px;
-  transition: width 1s, height 1s;
-}
-
-.location-container:hover {
-  width: 100%;
 }
 
 .location-title {
@@ -281,7 +273,7 @@
 
 .category-container {
   overflow: hidden;
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -290,15 +282,14 @@
   box-shadow: 2px 2px 5px 1px rgba(97, 97, 97, 0.137);
   margin: 50px 10px;
   padding: 20px;
-  transition: width 1s, height 1s;
-}
-
-.category-container:hover {
-  width: 100%;
 }
 
 .category-subContainer {
   margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .category-title {
@@ -325,7 +316,7 @@
 
 .guaranty-container {
   overflow: hidden;
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -334,11 +325,6 @@
   box-shadow: 2px 2px 5px 1px rgba(97, 97, 97, 0.137);
   margin: 50px 10px;
   padding: 20px;
-  transition: width 1s, height 1s;
-}
-
-.guaranty-container:hover {
-  width: 100%;
 }
 
 .guaranty-subContainer {
@@ -372,7 +358,7 @@
 .about-container {
   position: relative;
   overflow: hidden;
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -384,9 +370,9 @@
   transition: width 1s, height 1s;
 }
 
-.about-container:hover {
+/* .about-container:hover {
   width: 100%;
-}
+} */
 
 .about-title {
   margin: 20px 0px;
@@ -395,6 +381,10 @@
 
 .about_subContainer {
   margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .about_subtitle {
@@ -504,14 +494,6 @@
 }
 
 /* Style for the product price */
-.product-price {
-  color: #f6ee02;
-  font-size: 18px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  font-weight: bold;
-}
-
 .button {
   width: 100%;
   display: flex;
@@ -521,25 +503,6 @@
 }
 
 /* Style for the contact button */
-.btn-contact {
-  background-color: #1f7704;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: bolder;
-  border-radius: 10em;
-}
-
-.btn-contact-link {
-  text-decoration: none;
-  color: #fff;
-}
-
-.btn-contact:hover {
-  background-color: #1d6f02;
-}
 
 .btn-contact:active {
   background-color: #196400;
@@ -585,14 +548,13 @@
     flex-direction: column;
   }
 
-  .assistance-telephone-container{
+  .assistance-telephone-container {
     margin-bottom: 2rem;
   }
 }
 
 /* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
-
   .assistance-container {
     width: 100%;
   }
@@ -622,25 +584,25 @@
     flex-direction: column;
   }
 
-  .assistance-telephone-container{
+  .assistance-telephone-container {
     margin-bottom: 2rem;
   }
 
-  .options{
+  .options {
     display: flex;
     flex-direction: column;
   }
 
-  .option{
+  .option {
     margin-bottom: 2rem;
   }
 
-  .contacts{
+  .contacts {
     display: flex;
     flex-direction: column;
   }
 
-  .telephone{
+  .telephone {
     margin-bottom: 3rem;
   }
 }
